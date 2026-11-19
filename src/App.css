@@ -1,0 +1,99 @@
+main {
+  max-width: 650px;
+  margin: 50px auto;
+  padding: 25px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.start,
+.summary {
+  padding: 25px;
+}
+
+.muted,
+.progress,
+.side {
+  color: #666;
+}
+
+.card {
+  background: white;
+  border: 3px solid #b9bec5;
+  border-radius: 12px;
+  padding: 30px 20px;
+  margin: 20px 0;
+}
+
+.card.known {
+  border-color: #33945c;
+}
+
+.card.unknown {
+  border-color: #ce4a4a;
+}
+
+.text {
+  font-size: 1.3rem;
+  min-height: 65px;
+}
+
+button {
+  font: inherit;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #315b84;
+  color: white;
+  margin: 6px;
+}
+
+button:hover:not(:disabled) {
+  background: #244565;
+}
+
+button:disabled {
+  background: #c5c5c5;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.known-btn {
+  background: #328653;
+}
+
+.unknown-btn {
+  background: #b94a4a;
+}
+
+.answer-buttons {
+  margin: 15px 0;
+}
+
+.next {
+  margin-top: 12px;
+}
+
+.summary ul {
+  text-align: left;
+  line-height: 1.8;
+}
+
+@media (max-width: 500px) {
+  main {
+    margin: 15px auto;
+    padding: 12px;
+  }
+
+  .card {
+    padding: 20px 12px;
+  }
+
+  button {
+    width: 100%;
+    margin: 6px 0;
+  }
+}
